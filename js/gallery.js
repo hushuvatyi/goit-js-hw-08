@@ -91,8 +91,7 @@ createGallery(images);
 const onGalleryClick = (event) => {
   event.preventDefault();
   if (event.target.nodeName === "UL") return;
-  let href = event.target.dataset.source;
-  console.log(href);
+
   const instance = basicLightbox.create(
     `<img src="${event.target.dataset.source}" width="1112" height="640"/>`
   );
